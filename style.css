@@ -1,0 +1,1370 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* HOME */
+
+/* Bagian 1 */
+.bag1 {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 20px 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+   
+}
+
+nav img {
+    width: 150px;
+}
+
+nav i {
+    visibility: hidden;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    margin-bottom: 20px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 6px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    display: block;
+    transition: 0.7s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.nav a:after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+
+.nav a:hover:after {
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+
+.sub-judul1 {
+    text-align: center;
+    padding: 120px 0px;
+    line-height: 70px;
+}
+
+.sub-judul1 h1 {
+    color: aliceblue;
+    font-size: 60px;
+    word-spacing: 20px;
+    padding-bottom: 30px;
+}
+
+.sub-judul1 h4 {
+    color: grey;
+    font-size: 17px;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+
+.sub-judul1 a {
+    line-height: 50px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+    border: 2px solid aliceblue;
+    padding: 15px;
+}
+
+.sub-judul1 a:hover {
+    transition: 0.7s ease-out;
+    background-color: red;
+    border: 2px solid red;
+}
+/* /Bagian 1 */
+
+
+/* Bagian 2 */
+.bag2 {
+    margin: 40px 0px;
+}
+
+.sub-judul2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-judul2 P {
+   
+    width: 80%;
+}
+
+
+.text-block {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.tb1, .tb2, .tb3 {
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    background-color: rgb(173, 166, 172);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.tb1:hover, .tb2:hover, .tb3:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.text-block h2 {
+    line-height: 40px;
+}
+/* /Bagain 2 */
+
+
+/* Bagian 3 */
+.bag3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+.sub-judul3 {
+    text-align: center;
+    width: 80%;
+}
+
+.sub-judul3 h1 {
+    word-spacing: 2px;
+    line-height: 70px;
+}
+
+.campus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    width: 80%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-row {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.campus-row img{
+    border-radius: 5px;
+    width: 300px;
+    display: block;
+}
+
+.name {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.7s;
+}
+
+.name:hover {
+    background-color: gainsboro;
+    opacity: 0.8;
+}
+
+.name h3 {
+    margin-top: 450px;  
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.name:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* /Bagian 3 */
+
+
+/* Bagian 4 */
+.bag4 {
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-judul4 {
+    text-align: center;
+    line-height: 40px;
+}
+
+.gallery4 {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    /* background-color: red; */
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    /* text-align: center; */
+    width: 80%;
+}
+
+.desc1, .desc2, .desc3 {
+    flex-basis: 26%;
+    justify-content: center;
+}
+
+.gallery4 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gallery4 h3 {
+    line-height: 40px;
+}
+/* /Bagian 4 */
+
+
+/* Bagian 5 */
+.bag5 {
+    margin: 50px 0px;
+}
+
+.sub-judul5 {
+    text-align: center;
+    line-height: 45px;
+}
+
+.comments {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.comments img {
+    width: 60px;
+    border-radius: 700px;
+}
+
+.com1, .com2 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(173, 166, 172);
+    margin: 0px 20px;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.kanan1, .kanan2 {
+    margin: 0px 15px;
+}
+
+.kanan1 h4, .kanan2 h4 {
+    margin: 7px 0px;
+}
+
+.kanan1 p, .kanan2 p {
+    width: 500px;
+}
+
+.star {
+    margin: 10px 0px;
+}
+/* /Bagian 5 */
+
+
+
+/* Bagian 6 */
+.bag6 {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 12px;
+    padding: 100px 0;
+}
+
+.sub-judul6 {
+    padding: 25px;
+    line-height: 70px;
+    border-radius: 3px;
+}
+
+.sub-judul6 h1 {
+    color: aliceblue;
+    word-spacing: 3px;
+}
+
+.sub-judul6 a { 
+    text-decoration: none;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.sub-judul6 a:hover {
+    transition: 0.7s;
+    background-color: red;
+    border: 2px solid red;
+}
+/* /Bagian 6 */
+
+/* Footer */
+footer {
+    margin: 50px 0px;
+}
+
+.sub-judul7 {
+    text-align: center;
+}
+
+.sub-judul7 h3 {
+    line-height: 70px;
+}
+
+.sub-judul7 p {
+    line-height: 50px;
+    color: grey;
+}
+
+span {
+    color: red;
+    font-weight: 600;
+}
+
+.icon i {
+   font-size: 25px;
+   margin: 0px 10px;
+    color: rgb(58, 55, 55);
+}
+
+.me p {
+    color:  rgb(58, 55, 55);
+    font-weight: 700;
+}
+/* /Footer*/
+
+@media only screen and (max-width:700px) {
+
+    nav i {
+        visibility: visible;
+    }
+
+    .sub-judul1 h1 {
+        font-size: 35px;
+        word-spacing: normal;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: red;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        /* right: -200px; */
+        display: none;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    nav img {
+        width: 110px;
+    }
+
+    nav i {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .sub-judul1 h4 {
+        line-height: 25px;
+        font-weight: 300;
+    }
+
+    .sub-judul1 a {
+        font-size: 15px;
+        padding: 12px;
+        font-weight: 500;
+    }   
+    
+    /* Bagian 2 */
+    .sub-judul2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sub-judul2 h1 {
+        font-size: 25px;
+    }
+
+    .sub-judul2 p {
+        text-align: center;
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .text-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-block h2 {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .text-block h5 {
+        margin: 5px;
+        font-size: 15px;
+    }
+
+    .tb1 {
+        width: 80%;
+        margin: 12px 0;
+    }
+
+    .tb2 {
+        width: 80%;
+        margin: 12px 0;
+    }
+
+    .tb3 {
+        width: 80%;
+        margin: 12px 0;
+    }
+    /* /Bagian 2 */
+
+    /* Bagian 3 */
+
+    .sub-judul3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub-judul3 p {
+        /* text-align: center; */
+        width: 300px;
+        font-size: 16px;
+    }
+
+    .campus {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .campus-row img {
+       border-radius: 5px;
+        flex-wrap: wrap;
+        width: 38vh;
+    }
+
+    .campus-row h3 {
+        color: black;
+        font-size: 20px;
+    }
+
+    .name {
+        width: 100%;
+        font-size: 15px;
+    }
+    /* /Bagian 3 */
+
+
+    /* Bagian 4  */
+    .sub-judul4 p {
+        line-height: 20px;
+    }
+
+    .gallery4 {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .desc1, .desc2, .desc3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desc1 img {
+        width: 30vh;
+    }
+
+    .desc2 img {
+        width: 30vh;
+    }
+
+    .desc3 img {
+        width: 30vh;
+    }
+
+    .gallery4 h3, p {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .gallery4 h3 {
+        font-size: 22px;
+    }
+
+    .gallery4 p {
+        font-size: 16px;
+    }
+    /* /Bagian 4 */
+
+
+    /* Bagian 5 */
+    .bag5 {
+        margin: -14px 0;
+    }
+
+    .sub-judul5 h1 {
+        font-size: 19px;
+    }
+
+    .sub-judul5 p {
+        font-size: 16px;
+    }
+
+    .comments {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .com1, .com2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .com1 img, .com2 img {
+        width: 10vh;
+    }
+
+    .com1 p, .com2 p {  
+        font-size: 15px;
+        line-height: 24px;
+        width: 90%;
+    }
+
+    .com1 h4, .com2 h4 {
+        line-height: 30px;
+    }
+
+    .star {
+        display: flex;
+    }
+
+    .kanan1, .kanan2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* /Bagian 5 */
+
+
+    /* Bagian 6 */
+    .bag6 {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .sub-judul6 h1 {
+        font-size: 16px;
+        text-align: center;
+        line-height: 22px;
+    }
+
+    .sub-judul6 a {
+        font-size: 13px;
+        padding: 9px;
+    }
+
+
+    /* /Bagian 6 */
+
+    /* Footer */
+    .sub-judul7{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub-judul7 p {
+        text-align: center;
+        line-height: 27px;
+        width: 80%;
+    }
+    /* /Footer */
+}
+/* /HOME */
+
+/* ABOUT */
+.baga1 {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header {
+    padding: 25px;
+}
+
+.sub-judula1 {
+    text-align: center;
+    padding: 120px 0px;
+}
+
+.sub-judula1 h1 {
+    font-size: 30px;
+    color: aliceblue;
+} 
+
+.baga2 {
+    margin: 90px 0px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.desca h5 {
+    width: 600px;
+    margin-top: 10px;
+}
+
+.desca a {
+    text-decoration: none;
+    line-height: 70px;
+    padding: 12px;
+    font-weight: 500;
+    color: red;
+    border: 1px solid red;
+}
+
+.desca a:hover {
+    color: aliceblue;
+    background-color: red;
+    transition: 0.7s;
+}
+
+.imga img {
+    width: 500px;
+}
+
+/* /Bagian 2 */
+
+/* Footer */
+.sub-judula3 {
+    text-align: center;
+}
+
+.sub-judula3 h3 {
+    line-height: 70px;
+}
+
+.sub-judula3 p {
+    line-height: 50px;
+    color: grey;
+}
+/* /Footer */
+
+@media only screen and (max-width:700px) {
+    /* Bagian 2 */
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .desca h1 {
+        width: 350px;
+        margin-left: 90px;
+    }
+    .desca h5 {
+        text-align: center;
+        width: 400px;
+        margin-left: 20px;
+    }
+    .desca a {
+        margin-left: 150px;
+    }
+    .imga img {
+        width: 320px;
+    }
+    /* /Bagian2 */
+
+    /* Footer */
+    .sub-judula3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub-judula3 p {
+        text-align: center;
+        line-height: 27px;
+        width: 80%;
+    }
+    /* /Footer */
+}
+
+/* /ABOUT */
+
+/* ECOURSE */
+.bage1 {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.sub-judule1 {
+    text-align: center;
+    padding: 120px 0px;
+}
+
+.sub-judule1 h1 {
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.bage2 {
+    margin: 30px 0px;
+}
+
+.sub-judule2 {
+    text-align: center;
+    /* width: 80%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-judule2 p {
+    width: 80%;
+}
+
+
+/* Bagian 3 */
+.bage3 {
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-judule3 {
+    text-align: center;
+    line-height: 40px;
+}
+
+.gallery4 {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    /* background-color: red; */
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    /* text-align: center; */
+    width: 80%;
+}
+
+.desc1, .desc2, .desc3 {
+    flex-basis: 26%;
+    justify-content: center;
+}
+
+.gallery4 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gallery4 h3 {
+    line-height: 40px;
+}
+
+/* /Bagian 3 */
+
+@media only screen and (max-width:700px) {
+    .sub-judule2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sub-judule2 h1 {
+        font-size: 25px;
+    }
+
+    .sub-judul2 p {
+        font-size: 20px;
+        width: 80%;
+    }   
+
+    .text-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-block h2 {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .text-block h5 {
+        margin: 5px;
+        font-size: 15px;
+    }
+
+    .tb1 {
+        width: 80%;
+        margin: 12px 0;
+    }
+
+    .tb2 {
+        width: 80%;
+        margin: 12px 0;
+    }
+
+    .tb3 {
+        width: 80%;
+        margin: 12px 0;
+    }
+
+    .sub-judul4 p {
+        line-height: 20px;
+    }
+
+     /* Footer */
+     .sub-judule3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+     .sub-judule3 p {
+        text-align: center;
+        line-height: 27px;
+        width: 80%;
+    }
+   
+    /* /Footer */
+
+}
+/* /ECOURSE */
+
+
+/* BLOG */
+.bagb1 {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.sub-judulb1 {
+    text-align: center;
+    padding: 120px 0px;
+}
+
+.sub-judulb1 {
+    font-size: 17px;
+    color: aliceblue;
+}
+
+.bagb2 {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.blog img {
+    width: 600px;
+}
+
+.blog p {
+    width: 700px;
+    margin: 10px 0px;
+}
+
+.com {
+    margin: 40px 0px;
+    padding: 10px;
+    width: 600px;
+    border: 2px solid gray;
+}
+
+.com h3 {
+    color: grey;
+}
+
+.com input, textarea {
+   margin: 20px 0px;
+   padding: 7px;
+   background: transparent;
+}
+
+.com input {
+    width: 300px;
+    height: 50px;
+}
+
+.com textarea {
+    width: 300px;
+}
+
+.com button {
+    color: red;
+    background: transparent;
+    border: 1px solid red;
+    padding: 8px;
+}
+
+.com button:hover {
+    color: aliceblue;
+    background-color: red;
+    transition: 0.7s;
+}
+
+.tabel {
+    flex-basis: 32%;
+}
+
+.tabel h3 {
+    text-align: center;
+    color: aliceblue;
+    background-color: red;
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.tabel div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.tabel span {
+    color: black;
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    margin: 50px 0px;
+}
+
+.sub-judulb3 {
+    text-align: center;
+}
+
+.sub-judulb3 h3 {
+    line-height: 70px;
+}
+
+.sub-judulb3 p {
+    line-height: 50px;
+    color: grey;
+}
+
+span {
+    color: red;
+    font-weight: 600;
+}
+
+.icon i {
+   font-size: 25px;
+   margin: 0px 10px;
+    color: rgb(58, 55, 55);
+}
+
+.me p {
+    color:  rgb(58, 55, 55);
+    font-weight: 700;
+}
+/* /Footer*/
+@media only screen and (max-width:700px) {
+    .sub-judulb1 {
+        display: flex;
+        justify-content: center;
+    }
+    .sub-judulb1 h1{
+        width: 80%;
+    }
+
+    /* Bagian 2 */
+    .bagb2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog {
+        flex-basis: 56%;
+        width: 80%;
+    }
+    
+    .ilmu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ilmu h3 {
+        text-align: center;
+        margin: 7px 0;
+    }
+
+    .ilmu p {
+        width: 80%;
+        text-align: justify;
+    }
+
+    .ilmu img {
+        width:300px;
+    }
+
+    .comw {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .com {
+        width: 80%;
+    }
+
+    .com form input {
+        width: 75%;
+    }
+
+    .com form textarea {
+        width: 75%;
+    }
+
+    .tabel {
+        flex-basis: 32%;
+        width: 80%;
+    }
+
+    .tabel h3 {
+        padding: 5px;
+    }
+
+     /* Footer */
+     .sub-judulb3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+     .sub-judulb3 p {
+        text-align: center;
+        line-height: 27px;
+        width: 80%;
+    }
+   
+    /* /Footer */
+
+}
+/* /BLOG */
+
+/* CONTACT */
+.bagc1 {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.sub-judulc1 {
+    text-align: center;
+    padding: 120px 0px;
+}
+
+.sub-judulc1 h1 {
+    font-size: 30px;
+    color: aliceblue;
+}
+
+/* Bagian 2 */
+.bagc2 {
+    margin: 50px 0px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    width: 80%;
+}
+
+
+.data {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+
+.rumah, .hp, .surat {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.ket {
+    margin: 0px 25px;
+}
+
+.alamat i {
+   font-size: 25px;
+   color: red;
+}
+
+
+form {
+    padding: 20px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+   width: 300px;
+   height: 50px;
+   padding: 5px;
+}
+
+.form textarea {
+    padding: 5px;
+}
+
+.form input, .form textarea {
+    margin: 20px 0px;
+    border: 1.5px solid gainsboro;
+}
+
+form a {
+    line-height: 50px;
+    text-decoration: none;
+    color: red;
+    border: 2px solid red;
+    padding: 2px;
+    width: 56%;
+    height: 25%;
+    text-align: center;
+}
+
+form a:hover {
+    background-color: red;
+    color: aliceblue;
+    transition: 0.7s;
+}
+/* /Bagian 2 */
+
+/* Footer */
+.sub-judulc3 {
+    text-align: center;
+}
+
+.sub-judulc3 h3 {
+    line-height: 70px;
+}
+
+.sub-judulc3 p {
+    line-height: 50px;
+    color: grey;
+}
+
+span {
+    color: red;
+    font-weight: 600;
+}
+
+.icon i {
+   font-size: 25px;
+   margin: 0px 10px;
+    color: rgb(58, 55, 55);
+}
+
+.me p {
+    color:  rgb(58, 55, 55);
+    font-weight: 700;
+}
+/* Footer */
+footer {
+    margin: 50px 0px;
+}
+
+
+/* /Footer*/
+
+@media only screen and (max-width:700px) {
+    iframe {
+        max-width: 80%;
+        max-height: 20%;
+    }
+
+    .data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .info {
+        width: 80%;
+    }
+
+    .alamat i {
+        font-size: 22px;
+    }
+    
+    .alamat h2 {
+        font-size: 26px;
+    }
+
+    .alamat h3 {
+        font-size: 24px;
+    }
+
+    /* Footer */
+    .sub-judulc3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub-judulc3  p {
+        text-align: center;
+        line-height: 27px;
+        width: 80%;
+    }
+    /* /Footer */
+}
+/* /CONTACT */
+

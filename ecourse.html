@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Bagian 1 -->
+        <div class="bage1">
+            
+            <div class="header">
+
+                <nav>
+
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+
+                    <div class="nav-links" id="navLinks">
+
+                        <i class="ri-close-line" onclick="hideMenu()"></i>
+
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="ecourse.html">COURSE</a></li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+
+                    </div>
+
+                    <i class="ri-menu-line" onclick="showMenu()"></i>
+                </nav>
+
+                <div class="sub-judule1">
+
+                    <h1>Our Courses</h1>
+        
+                </div>
+
+            </div>
+        </div>
+        <!-- /Bagian 1 -->
+
+        <!-- Bagian 2 -->
+        <div class="bage2">
+
+            <div class="sub-judule2">
+                <h1>Course We Offer</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at tempora optio eius nobis exercitationem voluptas aspernatur suscipit quo voluptates ex autem debitis error, ea dolore? Quasi velit neque consequatur.</p>
+            </div>
+
+            <div class="text-block">
+
+                <div class="tb1">
+                    <h2>Intermediate</h2>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cupiditate quis id, perspiciatis nostrum quia nemo cum illum? Deleniti voluptatem tenetur fuga, exercitationem culpa nemo ut magni consectetur animi alias!</h5>
+                </div>
+
+                <div class="tb2">
+                    <h2>Degree</h2>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cupiditate quis id, perspiciatis nostrum quia nemo cum illum? Deleniti voluptatem tenetur fuga, exercitationem culpa nemo ut magni consectetur animi alias!</h5>
+                </div>
+
+                <div class="tb3">
+                    <h2>Post Graduate</h2>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cupiditate quis id, perspiciatis nostrum quia nemo cum illum? Deleniti voluptatem tenetur fuga, exercitationem culpa nemo ut magni consectetur animi alias!</h5>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /Bagian 2 -->
+
+        <!-- Bagian 3 -->
+        <div class="bage3">
+
+            <div class="sub-judule3">
+                <h1>Our Facilities</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, esse?</p>
+            </div>
+
+            <div class="gallery4">
+
+                <div class="desc1">
+
+                   <div class="img1">
+                    <img src="/images/library.png" alt="">
+                   </div>
+
+                   <div class="word1">
+                    <h3>Work CLass Library</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt non quae. Dignissimos, ipsa?</p>
+                   </div>
+
+                </div>
+
+                <div class="desc2">
+
+                    <div class="img2">
+                        <img src="/images/cafeteria.png" alt="">
+                    </div>
+
+                    <div class="word2">
+                        <h3>Largest PLayground</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt non quae. Dignissimos, ipsa?</p>
+                    </div>
+
+                </div>
+                
+                <div class="desc3">
+
+                    <div class="img3">
+                        <img src="/images/cafeteria.png" alt="">
+                    </div>
+
+                    <div class="word3">
+                        <h3>Tast and Healthy Food</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt non quae. Dignissimos, ipsa?</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /Bagian 3 -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="sub-judule3">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium totam molestias aut dolorem ut ipsum numquam?</p>
+                <p>Made with  <span>&#10084;</span> in Karanganyar</p>
+                <div class="icon">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                </div>
+                <div class="me">
+                    <h3>Ahmad Danesh Sudiono</h3>
+                </div>
+               
+            </div>
+          </footer>
+        <!-- /Footer -->
+    </div>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+            // navLinks.style.display = "none";
+        }
+
+        function showMenu() {
+            navLinks.style.right = "0";
+            navLinks.style.display = "block";
+        }
+
+    </script>
+
+</body>
+</html>

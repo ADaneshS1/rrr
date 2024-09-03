@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+
+        <div class="bagb1">
+
+            <div class="header">
+
+                <nav>
+
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+
+                    <div class="nav-links" id="navLinks">
+
+                        <i class="ri-close-line" onclick="hideMenu()"></i>
+
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="ecourse.html">COURSE</a></li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+
+                    </div>
+
+                    <i class="ri-menu-line" onclick="showMenu()"></i>
+                </nav>
+
+                <div class="sub-judulb1">
+
+                    <h1>Our Certificate & Online Programs For 2022</h1>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bagian 2 -->
+        <div class="bagb2">
+
+            <div class="blog">
+                
+                <div class="ilmu">
+                    <img src="/images/certificate.jpg" alt="">
+                    <h3>Our Certificate & Online Program For 2022</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum assumenda repudiandae saepe perspiciatis laboriosam commodi, dolore excepturi officia eaque quae tempora error totam quis pariatur quia illum repellat deleniti? Ipsam?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus ipsam architecto rerum tempora obcaecati amet provident expedita dolore commodi iusto reprehenderit maxime, eum corrupti, praesentium nisi esse! Minima, quibusdam mollitia.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, unde.</p>
+                </div>
+               
+
+                <div class="comw">
+
+                    <div class="com">
+
+                        <h3>Leave a Comment</h3>
+                        <form action="" class="comt">
+                            <input type="text" placeholder="Enter Name">
+                            <br>
+                            <input type="email" placeholder="Enter Email">
+                            <br>
+                            <textarea name="" id="" cols="" rows="5" placeholder="Your Comment"></textarea>
+                            <br>
+                            <button type="submit">Post Comment</button>
+                        </form>
+    
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+            
+            <div class="tabel">
+            
+                <h3>Post Categories</h3>
+
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+
+            </div>
+
+            <div class="tabelw">
+
+
+            </div>
+            
+
+        </div>
+        <!-- /Bagian 2 -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="sub-judulb3">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium totam molestias aut dolorem ut ipsum numquam?</p>
+                <p>Made with  <span>&#10084;</span> in Karanganyar</p>
+                <div class="icon">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                </div>
+                <div class="me">
+                    <h3>Ahmad Danesh Sudiono</h3>
+                </div>
+               
+            </div>
+          </footer>
+        <!-- /Footer -->
+
+    </div>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+            // navLinks.style.display = "none";
+        }
+
+        function showMenu() {
+            navLinks.style.right = "0";
+            navLinks.style.display = "block";
+        }
+
+    </script>
+</body>
+</html>

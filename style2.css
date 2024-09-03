@@ -1,0 +1,1681 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*        HOME      */
+
+/* Bagian 1 */
+.bag1 {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks {
+    flex: 1;
+    text-align: right;
+}
+
+.navlinks ul {
+    margin-bottom: 20px;
+}
+
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+}
+
+.navlinks ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    display: block;
+    transition: 0.7s;
+}
+
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+
+.header {
+    padding: 55px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+    position: relative; left: 70px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks {
+    flex: 1;
+    text-align: right;
+    margin-left: 800px;
+}
+
+.navlinks ul {
+    position: relative; right: 20px;
+}
+
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 6px;
+    position: relative;
+}
+
+.navlinks ul li a {
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav a:after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+
+.nav a:hover:after {
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+
+.body {
+    padding: 120px 0px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.body h1 {
+    font-size: 60px;
+    word-spacing: 20px;
+    color: aliceblue;
+}
+
+.body h4 {
+    color: gray;
+    font-size: 17px;
+}
+
+.body a {
+    line-height: 50px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid aliceblue;
+    padding: 15px;
+}
+
+.body a:hover {
+    transition: 0.2s ease-out;
+    background-color: red;
+    border: 2px solid black;
+}
+
+#close {
+    visibility: visible; 
+    opacity: 1;
+    cursor: pointer;
+}
+/* /Bagian 1 */
+
+
+/* Bagain 2 */
+.bag2 {
+    margin: 40px 0px;
+}
+
+.sub-judul2 {
+    text-align: center;
+}
+
+.sub-judul2 h1 {
+    word-spacing: 2px;
+    line-height: 70px;
+}
+
+.sub-judul2 p {
+    width: 1000px;
+    position:  relative; left: 152px;
+    text-align: center;
+}
+
+.text-block {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.tb1, .tb2, .tb3 {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background-color: rgb(173, 166, 172);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.tb1:hover, .tb2:hover, .tb3:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/* .tb1, .tb2, .tb3:hover {
+
+} */
+
+.text-block h2 {
+    line-height: 40px;
+}
+/* /Bagain 2 */
+
+
+/* Bagian 3 */
+.bag3 {
+    margin: 40px 0px;
+}
+
+.sub-judul3 {
+    text-align: center;
+}
+
+.sub-judul3 h1 {
+    word-spacing: 2px;
+    line-height: 70px;
+}
+
+.sub-judul3 p {
+    width: 1000px;
+    text-align: center;
+    position: relative; left: 152px;
+}
+
+.campus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+   padding-top: 50px;
+}
+
+.campus-row {
+    flex-basis: 32%;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    position: relative;
+    margin-left: 70px;
+    overflow: hidden;
+}
+
+.campus-row img{
+    border-radius: 5px;
+    width: 300px;
+    display: block;
+}
+
+.name {
+    background: transparent;
+    height: 100%;
+    width: 76%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.7s;
+}
+
+.name:hover {
+    background-color: gainsboro;
+    opacity: 0.8;
+}
+
+.name h3 {
+    margin-top: 450px;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.name:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* /Bagian 3 */
+
+
+/* Bagian 4 */
+.bag4 {
+    margin: 40px 0px;
+}
+
+.sub-judul4 {
+    text-align: center;
+    line-height: 40px;
+}
+
+.gallery4 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.desc1, .desc2, .desc3 {
+    margin: 0px 20px;
+}
+
+.gallery4 img {
+    width: 30px;
+    border-radius: 10px;
+}
+
+.gallery4 h3 {
+    line-height: 40px;
+}
+
+.gallery4 p {
+    width:400px;
+}
+/* /Bagian 4 */
+
+
+/* Bagian 5 */
+.bag5 {
+    margin: 200px 0px;
+}
+
+.sub-judul5 {
+    text-align: center;
+    line-height: 45px;
+}
+
+.comments {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.comments img {
+    width: 60px;
+    border-radius: 700px;
+}
+
+.com1, .com2 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(173, 166, 172);
+    margin: 0px 20px;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.kanan1, .kanan2 {
+    margin: 0px 15px;
+}
+
+.kanan1 h4, .kanan2 h4 {
+    margin: 7px 0px;
+}
+
+.kanan1 p, .kanan2 p {
+    width: 500px;
+}
+
+.star {
+    margin: 10px 0px;
+}
+/* /Bagian 5 */
+
+/* Bagian 6 */
+.bag6 {
+    position: relative; left: 240px;
+    border-radius: 12px;
+    margin: 80px 0px;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/images/banner2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 70%;
+}
+
+.sub-judul6 {
+    padding: 25px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 3px;
+}
+
+.sub-judul6 h1 {
+    text-align: center;
+    margin-left: 120px;
+    width: 700px;
+    color: aliceblue;
+    word-spacing: 3px;
+}
+
+.sub-judul6 a {
+    position: relative; right: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.sub-judul6 a:hover {
+    transition: 0.7s;
+    background-color: red;
+    border: 2px solid red;
+}
+/* /Bagian 6 */
+
+/* Footer */
+footer {
+    margin: 50px 0px;
+}
+
+.sub-judul7 {
+    text-align: center;
+}
+
+.sub-judul7 h3 {
+    line-height: 70px;
+}
+
+.sub-judul7 p {
+    line-height: 50px;
+    color: grey;
+}
+
+span {
+    color: red;
+    font-weight: 600;
+}
+
+.icon i {
+    width: 70px;
+    color: rgb(58, 55, 55);
+}
+
+.me p {
+    color:  rgb(58, 55, 55);
+    font-weight: 700;
+}
+/* /Footer*/
+
+
+/* Responsive Home */
+@media only screen and (max-width:700px) {
+
+    /* Bagian 1 */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #close {
+        visibility: visible; 
+        opacity: 1;
+        cursor: pointer;
+        background-color: red;
+    }
+
+    .bag1 .header nav i { 
+        visibility: visible;
+        display: block;
+        color: grey;
+        margin: 10px;
+        font-size: 27px;
+        cursor: pointer;
+        margin-left: 500px;
+        margin-bottom: 20px;
+    }
+    
+    .bag1 {
+        background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/images/banner.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 700px;
+    }
+
+    .logo img {
+        width: 10px;
+    }
+    
+    .navlinks ul li {
+        display: block;
+    }
+
+    .navlinks {
+        position: fixed;
+        background-color: red;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        display: none;
+        text-align: left;
+        z-index: 2;
+        transition: 0.7s;
+    }
+
+    .navlinks ul {
+        padding: 30px;
+    }
+
+    .body h4 {
+        position: relative; left: 50px;
+        text-align: center;
+        width: 600px;
+    } 
+   
+    /* /Bagian 1 */
+
+    /* Bagian 2 */
+    .sub-judul2 h1 {
+        font-size: 4.5vw;
+    }
+
+    .sub-judul2 p {
+        width: 520px;
+        margin-left: -60px;
+        font-size: 4vh;
+    }
+
+    .text-block {
+        width: 100%;
+    }
+
+    .text-block h2 {
+        font-size: 20px;
+    }
+
+    .tb1 {
+        width: 30%;
+        margin: 0 3%;
+    }
+
+    .tb2 {
+        width: 30%;
+        margin: 0 3%;
+    }
+
+    .tb3 {
+        width: 30%;
+        margin: 0 3%;
+    }
+    /* /Bagian 2 */
+
+    /* Bagian 3 */
+
+    .sub-judul3 p {
+        width: 520px;
+        margin-left: -60px;
+    }
+
+    .campus {
+        width: 100%;
+    }
+    .campus-row {
+       width: 100%;
+      position: relative; right: 30px;
+    }
+
+    .campus-row img {
+        border-radius: 5px;
+        flex-wrap: wrap;
+        width: 40vh;
+    }
+
+    .name {
+        width: 81%;
+        font-size: 15px;
+    }
+    /* /Bagian 3 */
+
+
+    /* Bagian 4  */
+    .gallery4 {
+        width: 100%;
+        margin: 13px 0px;
+        padding: 2px;
+    }
+    .gallery4 img {
+        position: relative; left: 20px;
+    }
+
+    .desc1 {
+        width: 30%;
+        margin: 0 3%;
+    }
+
+    .desc2 {
+        width: 30%;
+        margin: 0 3%;
+    }
+
+    .desc3 {
+        width: 30%;
+        margin: 0 3%;
+    }
+
+    .desc1 img {
+        width: 30vh;
+    }
+
+    .desc2 img {
+        width: 30vh;
+    }
+
+    .desc3 img {
+        width: 30vh;
+    }
+
+    .gallery4 h3 {
+        font-size: 4.5vh;
+    }
+
+    .gallery4 p {
+        width: 150px;
+        font-size: 4vh;
+    }
+    /* /Bagian 4 */
+
+
+    /* Bagian 5 */
+    .sub-judul5 h1 {
+        font-size: 4.5vw;
+    }
+
+    .sub-judul5 p {
+        font-size: 4vh;
+    }
+
+    .comments {
+        width: 100%;
+    }
+
+    .com1, .com2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        margin: 10px 3%;
+    }
+
+    .com1 img, .com2 img {
+        width: 10vh;
+    }
+
+    .com1 p, .com2 p {
+        text-align: center;
+        width: 170px;
+        font-size: 3.5vh;
+        line-height: 5vh;
+    }
+
+    .com1 h4, .com2 h4 {
+        line-height: 10vh;
+        margin-left: 5vh;
+    }
+
+    .star {
+        display: flex;
+        margin-left: 10vh;
+    }
+    /* /Bagian 5 */
+
+
+    /* Bagian 6 */
+    .bag6 {
+        width: 500px;
+        height: 310px;
+        margin-left: -130px;
+    }
+
+    .sub-judul6 h1 {
+        width: 500px;
+        margin-left: -13px;
+        font-size: 4.5vw;
+    }
+
+    .sub-judul6 a {
+        font-size: 4vh;
+        margin-left: 20px;
+    }
+
+
+    /* /Bagian 6 */
+    /* Footer */
+    /* /Footer */
+
+}
+
+/* Responsive */
+
+
+
+/* ABOUT */
+
+/* Bagain */
+.baga1 {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks {
+    flex: 1;
+    text-align: right;
+}
+
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+}
+
+.navlinks ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    display: block;
+    transition: 0.7s;
+}
+
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+
+.header {
+    padding: 55px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 155px;
+    position: relative; left: 70px;
+}
+
+.navlinks i {
+    visibility: hidden;
+}
+
+nav i {
+    visibility: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks {
+    flex: 1;
+    text-align: right;
+    margin-left: 800px;
+}
+
+.navlinks ul {
+    position: relative; right: 20px;
+}
+
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 6px;
+    position: relative;
+}
+
+.navlinks ul li a {
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav a:after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+
+.nav a:hover:after {
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+
+.sub-judula1 {
+    margin: 70px 0px;
+    text-align: center;
+    color: aliceblue;
+}
+/* /Bagian 1 */
+
+
+/* Bagian 2 */
+
+.baga2 {
+    margin: 90px 0px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+.desca h5 {
+    width: 600px;
+    margin-top: 10px;
+}
+
+.desca a {
+    text-decoration: none;
+    line-height: 70px;
+    padding: 12px;
+    font-weight: 500;
+    color: red;
+    border: 2px solid red;
+}
+
+.desca a:hover {
+    color: aliceblue;
+    background-color: red;
+    transition: 0.7s;
+}
+
+.imga img {
+    width: 500px;
+}
+
+/* /Bagian 2 */
+
+/* Footer */
+.sub-judula3 {
+    text-align: center;
+}
+
+.sub-judula3 h3 {
+    line-height: 70px;
+}
+
+.sub-judula3 p {
+    line-height: 50px;
+    color: grey;
+}
+
+span {
+    color: red;
+    font-weight: 600;
+}
+
+.icon i {
+    width: 70px;
+    color: rgb(58, 55, 55);
+}
+
+.me p {
+    color:  rgb(58, 55, 55);
+    font-weight: 700;
+}
+/* Footer */
+
+
+@media only screen and (max-width:700px) {
+
+    /* Bagian 1 */
+    .baga1 .header nav  i { 
+        visibility: visible;
+        display: block;
+        color: grey;
+        margin: 10px;
+        font-size: 27px;
+        cursor: pointer;
+        position: relative; left: 500px; bottom: 10px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+    
+    .navlinks ul li {
+        display: block;
+    }
+
+    .navlinks {
+        position: absolute;
+        background-color: rgb(65, 60, 60);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        display: none;
+        text-align: left;
+        z-index: 2;
+    }
+
+    .navlinks ul {
+        padding: 30px;
+    }
+    /* /Bagian 1 */
+
+    /* Bagian 2 */
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .desca h1 {
+        width: 350px;
+        margin-left: 90px;
+    }
+    .desca h5 {
+        text-align: center;
+        width: 400px;
+        margin-left: 20px;
+    }
+    .desca a {
+        margin-left: 150px;
+    }
+    .imga img {
+        width: 70vh;
+    }
+    /* /Bagian2 */
+} 
+
+
+
+/* Contact */
+/* Bagian 1 */
+.bagc1 {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks {
+    flex: 1;
+    text-align: right;
+}
+
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+}
+
+.navlinks ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    display: block;
+    transition: 0.7s;
+}
+
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+
+.header {
+    padding: 55px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 155px;
+    position: relative; left: 70px;
+}
+
+.navlinks i {
+    visibility: hidden;
+}
+
+nav i {
+    visibility: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks {
+    flex: 1;
+    text-align: right;
+    margin-left: 800px;
+}
+
+.navlinks ul {
+    position: relative; right: 20px;
+}
+
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 6px;
+    position: relative;
+}
+
+.navlinks ul li a {
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav a:after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+
+.nav a:hover:after {
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+
+.sub-judulc1 {
+    text-align: center;
+    color: aliceblue;
+}
+/* /Bagian 1 */
+
+/* Bagian 2 */
+.bagc2 {
+    margin: 50px 0px;
+}
+
+iframe {
+    width: 1000px;
+    margin-left: 200px;
+}
+
+.data {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+
+.rumah, .hp, .surat {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.ket {
+    margin: 0px 25px;
+}
+
+.alamat i {
+   font-size: 25px;
+   color: red;
+}
+
+.form {
+    border: 2px solid gray;
+    padding: 20px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+   width: 300px;
+   height: 50px;
+   padding: 5px;
+}
+
+.form textarea {
+    padding: 5px;
+}
+
+.form input, textarea {
+    margin: 20px 0px;
+}
+
+.isi a {
+    line-height: 50px;
+    text-decoration: none;
+    color: red;
+    border: 2px solid red;
+    padding: 9px;
+}
+.isi a:hover {
+    background-color: red;
+    color: aliceblue;
+    transition: 0.7s;
+}
+/* /Bagian 2 */
+
+/* Footer */
+.sub-judulc1 {
+    text-align: center;
+}
+
+.sub-judulc1 h3 {
+    line-height: 70px;
+}
+
+.sub-judulc1 p {
+    line-height: 50px;
+    color: grey;
+}
+
+span {
+    color: red;
+    font-weight: 600;
+}
+
+.icon i {
+    width: 70px;
+    color: rgb(58, 55, 55);
+}
+
+.me p {
+    color:  rgb(58, 55, 55);
+    font-weight: 700;
+}
+/* /Footer */
+
+
+@media only screen and (max-width:700px) {
+    .logo img {
+        width: 120px;
+    }
+    
+    .navlinks ul li {
+        display: block;
+    }
+
+    .navlinks {
+        position: absolute;
+        background-color: rgb(65, 60, 60);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        display: none;
+        text-align: left;
+        z-index: 2;
+    }
+
+    #hide {
+        visibility: visible;
+        font-size: 26px;
+    }
+
+    .bagc1 .header nav i { 
+        visibility: visible;
+        display: block;
+        color: grey;
+        margin: 10px;
+        font-size: 27px;
+        cursor: pointer;
+        position: relative; left: 500px; bottom: 10px;
+    }
+
+    .navlinks ul {
+        padding: 30px;
+    }
+
+    iframe {
+        max-width: 600px;
+        max-height: 310px;
+       position: relative; right: 145px;
+    }
+
+    .data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .alamat i {
+        font-size: 4vh;
+    }
+    
+    .alamat h2 {
+        font-size: 5vh;
+    }
+
+    .alamat h3 {
+        font-size: 4vh;
+    }
+
+    .isi {
+        margin: 20px 0px;
+    }
+
+    /* Footer */
+
+    .sub-judulc1  p {
+        margin-left: 150px;
+        width: 400px;
+    }
+    /* /Footer */
+}
+
+/* Ecourse */
+.bage1 {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks {
+    flex: 1;
+    text-align: right;
+}
+
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+}
+
+.navlinks ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    display: block;
+    transition: 0.7s;
+}
+
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+
+.header {
+    padding: 55px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 155px;
+    position: relative; left: 70px;
+}
+
+.navlinks i {
+    visibility: hidden;
+}
+
+nav i {
+    visibility: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks {
+    flex: 1;
+    text-align: right;
+    margin-left: 800px;
+}
+
+.navlinks ul {
+    position: relative; right: 20px;
+}
+
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 6px;
+    position: relative;
+}
+
+.navlinks ul li a {
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav a:after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+
+.nav a:hover:after {
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+
+.sub-judule1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+/* Bagian 2 */
+.bage2 {
+    margin: 30px 0px;
+}
+
+.sub-judule2 {
+    text-align: center;
+}
+
+/* Bagian 3 */
+.bage3 {
+    margin: 110px 0px;
+}
+
+.sub-judule3 {
+    text-align: center;
+}
+/* /Bagian 3 */
+
+/* Footer */
+.sub-judule3 p {
+    line-height: 25px;
+}
+
+.icon i {
+    font-size: 25px;
+}
+/* /Footer */
+
+@media only screen and (max-width:700px) {
+    .logo img {
+        width: 120px;
+    }
+    
+    .navlinks ul li {
+        display: block;
+    }
+
+    .navlinks {
+        position: absolute;
+        background-color: rgb(65, 60, 60);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        display: none;
+        text-align: left;
+        z-index: 2;
+    }
+
+    #hide {
+        visibility: visible;
+        font-size: 26px;
+    }
+
+    .bage1 .header nav i { 
+        visibility: visible;
+        display: block;
+        color: grey;
+        margin: 10px;
+        font-size: 27px;
+        cursor: pointer;
+        position: relative; left: 500px; bottom: 10px;
+    }
+
+    .navlinks ul {
+        padding: 30px;
+    }
+}
+
+/* /Ecourse */
+
+
+
+/* Blog */
+
+/* Bagian1 */
+.bagb1 {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks {
+    flex: 1;
+    text-align: right;
+    margin-left: 800px;
+}
+
+.navlinks ul {
+    margin-bottom: 20px;
+    position: relative; right: 20px;
+}
+
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 6px;
+    position: relative;
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navlinks ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    display: block;
+    transition: 0.7s;
+}
+
+.navlinks ul li:hover::after{
+    width: 100%;
+    transition: 0.7s ease-out;
+}
+
+.header {
+    padding: 55px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 155px;
+    position: relative; left: 70px;
+}
+
+.navlinks i {
+    visibility: hidden;
+}
+
+nav i {
+    visibility: hidden;
+}
+
+.sub-judulb1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+/* /Bagian 1 */
+.bagb2 {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.blog img {
+    width: 600px;
+}
+
+.blog p {
+    width: 700px;
+    margin: 10px 0px;
+}
+
+.com {
+    margin: 40px 0px;
+    padding: 10px;
+    width: 600px;
+    border: 2px solid gray;
+}
+
+.com h3 {
+    color: grey;
+}
+
+.com input, textarea {
+   margin: 20px 0px;
+   padding: 7px;
+   background: transparent;
+}
+
+.com input {
+    width: 300px;
+    height: 50px;
+}
+
+.com textarea {
+    width: 300px;
+}
+
+.com button {
+    color: red;
+    background: transparent;
+    border: 1px solid red;
+    padding: 8px;
+}
+
+.com button:hover {
+    color: aliceblue;
+    background-color: red;
+    transition: 0.7s;
+}
+
+.tabel {
+    flex-basis: 32%;
+}
+
+.tabel h3 {
+    text-align: center;
+    color: aliceblue;
+    background-color: red;
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.tabel div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.tabel span {
+    color: black;
+    opacity: 0.8;
+}
+/* Bagian 2 */
+
+/* /Bagian 2 */
+
+@media only screen and (max-width:700px) {
+    .logo img {
+        width: 120px;
+    }
+    
+    .navlinks ul li {
+        display: block;
+    }
+
+    .navlinks {
+        position: fixed;
+        background-color: rgb(65, 60, 60);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        /* right: 0; */
+        display: none;
+        text-align: left;
+        z-index: 2;
+        transition: 0.7s;
+    }
+
+    #hide {
+        visibility: visible;
+        font-size: 26px;
+    }
+
+    .bagb1 .header nav i { 
+        visibility: visible;
+        display: block;
+        color: grey;
+        margin: 10px;
+        font-size: 27px;
+        cursor: pointer;
+        position: relative; left: 500px; bottom: 10px;
+    }
+
+    .navlinks ul {
+        padding: 30px;
+    }
+
+    .sub-judulb1 h1{
+        width: 60%;
+        margin-left: 140px;
+    }
+
+    /* Bagian 2 */
+    .bagb2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .ilmu {
+        margin-left: 150px;
+        align-items: center;
+    }
+
+    .ilmu p {
+        margin-left: -40px;
+        width: 450px;
+        text-align: justify;
+    }
+
+    .ilmu img {
+        width: 90vh;
+    }
+
+    .com {
+        width: 65%;
+        margin-left: 120px;
+    }
+
+    .tabel {
+        width: 60%;
+        margin-left: 140px;
+    }
+}
+
+/* /BLog */

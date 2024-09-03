@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Bagian 1 -->
+        <div class="bagc1">
+
+            <div class="header">
+
+                <nav>
+
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+
+                    <div class="nav-links" id="navLinks">
+
+                        <i class="ri-close-line" onclick="hideMenu()"></i>
+
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="ecourse.html">COURSE</a></li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+
+                    </div>
+
+                    <i class="ri-menu-line" onclick="showMenu()"></i>
+                </nav>
+
+                <div class="sub-judulc1">
+
+                    <h1>Contact Us</h1>
+
+                </div>
+
+            </div>
+        
+          </div>
+        <!-- /Bagian 1 -->
+
+
+        <!-- Bagian 2 -->
+        <div class="bagc2">
+
+           <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126904.29865750184!2d106.62573786889797!3d-6.2953259268742325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fab10419c095%3A0x8706481c2c4aafe4!2sTangerang%20Selatan%2C%20Kota%20Tangerang%20Selatan%2C%20Banten!5e0!3m2!1sid!2sid!4v1666332244153!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+           
+           <div class="data">
+
+            <div class="info">
+
+                <div class="alamat">
+
+                    <div class="rumah">
+                        <i class="fa-solid fa-house"></i>
+    
+                        <div class="ket">
+                            <h2>Jalan Rosela Utama</h2>
+                            <h3>Tangerang Selatan, Kota Tangerang Selatan, Banten</h3>
+                        </div>
+    
+                    </div>
+                   
+                    <div class="hp">
+    
+                        <i class="fa-solid fa-phone"></i>
+    
+                        <div class="ket">
+                            <h2>+62 0821328457384</h2>
+                            <h3>Monday to Saturday, 10AM to 6PM</h3>
+                        </div>
+    
+                    </div>
+    
+                   <div class="surat">
+    
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <div class="ket">
+                            <h2>info@ppqita.com</h2>
+                            <h3>Email us your query</h3>
+                        </div>  
+
+                   </div>
+                   
+                </div>
+
+            </div>
+
+            <div class="form">
+                
+                <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your email addres" required>
+                    <input type="text" placeholder="Enter your subject" required>
+                    <textarea name="" id="" cols="" rows="8" placeholder="Message"></textarea>
+                    <a href="#">Send Message</a>
+                </form>
+               
+            </div>
+            
+
+           </div>
+
+        </div>
+        <!-- /Bagian 2 -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="sub-judulc3">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium totam molestias aut dolorem ut ipsum numquam?</p>
+                <p>Made with  <span>&#10084;</span> in Karanganyar</p>
+                <div class="icon">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                </div>
+                <div class="me">
+                    <h3>Ahmad Danesh Sudiono</h3>
+                </div>
+               
+            </div>
+          </footer>
+        <!-- /Footer -->
+    </div>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+            // navLinks.style.display = "none";
+        }
+
+        function showMenu() {
+            navLinks.style.right = "0";
+            navLinks.style.display = "block";
+        }
+
+    </script>
+</body>
+</html>
